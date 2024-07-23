@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Experience.css";
 import "./ContactUs.css";
 import SocialLinks from "./SocialLinks";
 
 const ContactUs = () => {
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function handelChange(e) {
+    setInput({ ...input, [e.target.name]: e.target.value });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setInput({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  }
+
   return (
     <div className="experience">
       <div class="video-background">
@@ -54,28 +75,54 @@ const ContactUs = () => {
         </div>
 
         <div className="contact_form contact">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className="form">
               <label htmlFor="">Name:</label>
-              <input type="text" name="" id="" required />
+              <input
+                type="text"
+                name="name"
+                id=""
+                required
+                onChange={handelChange}
+                value={input.name}
+              />
             </div>
 
             <div className="form">
               <label htmlFor="">Email:</label>
-              <input type="email" name="" id="" required />
+              <input
+                type="email"
+                name="email"
+                id=""
+                required
+                onChange={handelChange}
+                value={input.email}
+              />
             </div>
 
             <div className="form">
               <label htmlFor="">Subject:</label>
-              <input type="text" name="" id="" required />
+              <input
+                type="text"
+                name="subject"
+                id=""
+                required
+                onChange={handelChange}
+                value={input.subject}
+              />
             </div>
 
             <div className="form">
               <label htmlFor="">Message:</label>
-              <textarea name="" id=""></textarea>
+              <textarea
+                name="message"
+                id=""
+                value={input.message}
+                onChange={handelChange}
+              ></textarea>
             </div>
 
-            <button>Submitt</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
