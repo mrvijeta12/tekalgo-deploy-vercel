@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0px;
+  /* left: 0px; */
+  background-color: white;
+  z-index: 1000;
+  background-color: #02024c;
+}
+
+.header .logo img {
+  width: 150px;
+  height: 40px;
+  /* line-height: 70px; */
+  margin: auto 0px;
+  background-color: #02024c;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #02024c;
+}
+
+.bars {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .sidebar {
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 70px;
+  }
+
+  .bars {
+    display: block;
+    cursor: pointer;
+    line-height: 70px;
+  }
+  .sidebar.open {
+    right: 0;
+  }
+}

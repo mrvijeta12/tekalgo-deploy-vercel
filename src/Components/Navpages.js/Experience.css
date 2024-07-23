@@ -1,0 +1,142 @@
+.experience {
+  /* letter-spacing: 0.5px;
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;  */
+
+  letter-spacing: 0.5px;
+  /* width: 70%; */
+  margin: 0px auto;
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+}
+
+.experience_data_container {
+  width: 75%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+.experience p {
+  line-height: 25px;
+  font-weight: 300px;
+  /* font-size: 1.3125rem; */
+  margin-bottom: 30px;
+  /* color: #272932; */
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.experience h2 {
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.ourExpertise h2 {
+  text-align: center;
+}
+
+.ourExpertise_data {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+}
+
+.ourExpertise_data .cards {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 250px;
+
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  /* border: 2px solid red; */
+}
+
+.card1 {
+  background-image: url("../../../public/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg");
+}
+.card2 {
+  background-image: url("../../../public/rivage-Im_cQ6hQo10-unsplash.jpg");
+}
+.card3 {
+  background-image: url("../../../public/thisisengineering--GoKFTYnRoQ-unsplash.jpg");
+}
+.card4 {
+  background-image: url("../../../public/thisisengineering-8Jw2WhafOOg-unsplash.jpg");
+}
+.card5 {
+  background-image: url("../../../public/thisisengineering-Ab1CJDxlnOM-unsplash.jpg");
+}
+.card6 {
+  background-image: url("../../../public/thisisengineering-uyfohHiTxho-unsplash.jpg");
+}
+.card7 {
+  background-image: url("../../../public/thisisengineering-XAAGdkSueLo-unsplash.jpg");
+}
+.card8 {
+  background-image: url("../../../public/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg");
+}
+.cards:hover {
+  transform: scale(1.05);
+
+  /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6); */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.ourExpertise_data .cards::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.ourExpertise_data .cards h2 {
+  /* color: #02024c; */
+  /* color: #f41d07; */
+  color: white;
+  text-align: center;
+  z-index: 100;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 950px) {
+  .ourExpertise_data .cards {
+    /* flex: 1 1 250px;
+    max-width: 200px;
+    height: 150px; */
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .experience {
+    /* width: 100% !important; */
+  }
+
+  .experience_data_container {
+    width: 100%;
+    padding: 10px;
+  }
+}
