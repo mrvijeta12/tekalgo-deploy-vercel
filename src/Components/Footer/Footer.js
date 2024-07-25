@@ -26,7 +26,7 @@ const Footer = ({ handleNavClick }) => {
             <NavLink to="/whatWeDo">what We Do</NavLink>
             <NavLink to="/blog">Blog</NavLink>
             <NavLink to="/contactUs">Contact Us</NavLink>
-            <NavLink to="/joinTheTeam">Join The Team</NavLink>
+            <NavLink to="/joinOurTeam">Join The Team</NavLink>
           </div>
         </div>
 

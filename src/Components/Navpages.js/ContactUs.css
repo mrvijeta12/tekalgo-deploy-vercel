@@ -104,6 +104,12 @@ textarea {
   background-color: none !important;
 } */
 
+@media screen and (max-width: 822px) {
+  .contact_header {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .contact_form {
     display: flex;

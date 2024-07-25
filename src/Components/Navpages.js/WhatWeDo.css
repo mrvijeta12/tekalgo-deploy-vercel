@@ -38,14 +38,32 @@
   position: relative;
 
   transition: all 0.3s ease;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.4);
 }
 
 .whatwedo_data .cards h2 {
   /* color: #f41d07; */
-  color: white;
-  text-align: end;
+  color: #ff3939;
+  /* text-align: end; */
   /* border: 2px solid red; */
   padding: 10px;
   text-decoration: none !important;
   font-size: 21px;
+  font-weight: 200;
+}
+
+.whatwedo_data .card1 {
+  background-image: url("../Assets/w1.jpg");
+}
+.whatwedo_data .card2 {
+  background-image: url("../Assets/w2.jpg");
+}
+.whatwedo_data .card3 {
+  background-image: url("../Assets/w3.jpg");
+}
+.whatwedo_data .card4 {
+  background-image: url("../Assets/w5.jpg");
+}
+.whatwedo_data .card5 {
+  background-image: url("../Assets/w6.jpg");
 }

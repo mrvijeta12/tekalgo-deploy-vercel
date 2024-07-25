@@ -52,6 +52,7 @@
 }
 
 .ourExpertise_data .cards {
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: end;
@@ -66,61 +67,67 @@
   position: relative;
 
   transition: all 0.3s ease;
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.4);
 
   /* border: 2px solid red; */
+  /* transition: background-color 0.3s ease, background-blend-mode 0.3s ease; */
 }
 
 .card1 {
-  background-image: url("../../../public/procreator-ux-design-studio-VzJjPuk53sk-unsplash.jpg");
+  background-image: url("../Assets/o1.jpg");
 }
 .card2 {
-  background-image: url("../../../public/rivage-Im_cQ6hQo10-unsplash.jpg");
+  background-image: url("../Assets/o2.jpg");
 }
 .card3 {
-  background-image: url("../../../public/thisisengineering--GoKFTYnRoQ-unsplash.jpg");
+  background-image: url("../Assets/o7.jpg");
 }
 .card4 {
-  background-image: url("../../../public/thisisengineering-8Jw2WhafOOg-unsplash.jpg");
+  background-image: url("../Assets/o8.jpg");
 }
 .card5 {
-  background-image: url("../../../public/thisisengineering-Ab1CJDxlnOM-unsplash.jpg");
+  background-image: url("../Assets/o6.jpg");
 }
 .card6 {
-  background-image: url("../../../public/thisisengineering-uyfohHiTxho-unsplash.jpg");
+  background-image: url("../Assets/o5.jpg");
 }
 .card7 {
-  background-image: url("../../../public/thisisengineering-XAAGdkSueLo-unsplash.jpg");
+  background-image: url("../Assets/o9.jpg");
 }
 .card8 {
-  background-image: url("../../../public/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg");
+  background-image: url("../Assets/o10.jpg");
 }
+
 .cards:hover {
   transform: scale(1.05);
-
   /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6); */
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
+  /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .ourExpertise_data .cards::before {
-  content: "";
+  /* content: "";
   position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
   right: 0px;
 
-  /* background-color: rgba(0, 0, 0, 0.6); */
+  background-color: rgba(0, 0, 0, 0); */
+  /* transition: background-color 0.3s ease; */
+  /* transition: all 0.3s ease; */
 }
 
 .ourExpertise_data .cards h2 {
   /* color: #02024c; */
   /* color: #f41d07; */
-  color: white;
+  color: #ff3939;
   text-align: center;
   z-index: 100;
   margin-bottom: 5px;
   text-decoration: none;
   font-size: 16px;
+  font-weight: 200;
 }
 
 @media (max-width: 950px) {
@@ -131,17 +138,7 @@
   }
 }
 
-/* @media screen and (max-width: 400px) {
-  .experience p {
-    text-align: left;
-  }
-} */
-
 @media screen and (max-width: 280px) {
-  .experience {
-    /* width: 100% !important; */
-  }
-
   .experience_data_container {
     width: 100%;
     padding: 10px;

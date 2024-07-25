@@ -1,5 +1,14 @@
-.header {
+.header_container {
   width: 100%;
+  /* border: 2px solid red; */
+}
+
+.header {
+  max-width: 1344px !important;
+  /* box-sizing: border-box; */
+  /* border: 2px solid blue; */
+  width: 100%;
+  /* max-width: 1344px; */
   height: 70px;
   line-height: 70px;
   display: flex;
@@ -7,10 +16,12 @@
   padding: 0px 20px;
   position: fixed;
   top: 0px;
-  /* left: 0px; */
-  background-color: white;
   z-index: 1000;
   background-color: #02024c;
+}
+
+.bars_container {
+  /* border: 2px solid aqua; */
 }
 
 .header .logo img {
@@ -19,6 +30,7 @@
   /* line-height: 70px; */
   margin: auto 0px;
   background-color: #02024c;
+  /* border: 2px solid red; */
 }
 
 .logo {
@@ -35,17 +47,20 @@
   cursor: pointer;
   color: white;
   display: none;
+  background-color: #02024c;
+  height: 100%;
 }
 
 @media (max-width: 950px) {
   .sidebar {
     right: -100%;
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
+    /* width: 100%;
+    height: 100vh; */
+    background-color: #02024c;
     transition: all 0.3s ease;
     position: absolute;
     top: 70px;
+    /* border: 2px solid red; */
   }
 
   .bars {
