@@ -13,9 +13,9 @@ const GoToTop = () => {
     let height = 100;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
-    console.log(winScroll);
+    // console.log(winScroll);
 
-    if (height < winScroll) {
+    if (winScroll > height) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -24,10 +24,11 @@ const GoToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
 
   return (
-    <div>
+    <div className="top-btn-container">
       {visible && (
         <div className="top-btn" onClick={goToBtn}>
           <FaArrowUp />

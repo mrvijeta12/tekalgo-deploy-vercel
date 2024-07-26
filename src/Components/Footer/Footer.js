@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import logo from "../Assets/tekAlgo_logo_in_white.png";
-import Navlinks from "../Navlinks.js/Navlinks";
-// import { useState } from "react";
 
 const Footer = ({ handleNavClick }) => {
   const [email, setEmail] = useState("");
@@ -74,7 +72,6 @@ const Footer = ({ handleNavClick }) => {
           © Copyright <b>TekAlgo Solution </b>|| All Rights Reserved
         </span>
       </div>
-      ;
     </div>
   );
 };

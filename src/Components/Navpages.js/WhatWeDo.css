@@ -38,7 +38,7 @@
   position: relative;
 
   transition: all 0.3s ease;
-  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
 }
 
 .whatwedo_data .cards h2 {
@@ -56,14 +56,14 @@
   background-image: url("../Assets/w1.jpg");
 }
 .whatwedo_data .card2 {
-  background-image: url("../Assets/w2.jpg");
-}
-.whatwedo_data .card3 {
   background-image: url("../Assets/w3.jpg");
 }
+.whatwedo_data .card3 {
+  background-image: url("../Assets/w2.jpg");
+}
 .whatwedo_data .card4 {
-  background-image: url("../Assets/w5.jpg");
+  background-image: url("../Assets/w6.jpg");
 }
 .whatwedo_data .card5 {
-  background-image: url("../Assets/w6.jpg");
+  background-image: url("../Assets/w5.jpg");
 }
