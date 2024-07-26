@@ -3,7 +3,6 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
-  /* color: black; */
   color: white;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -12,8 +11,6 @@
 
 .navlinks {
   background-color: #02024c;
-  /* width: 100%; */
-  /* border: 2px solid black; */
   height: 100%;
 }
 

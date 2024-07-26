@@ -3,7 +3,7 @@ import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import logo from "../Assets/tekAlgo_logo_in_white.png";
 
-const Footer = ({ handleNavClick }) => {
+const Footer = () => {
   const [email, setEmail] = useState("");
 
   function handleSubmit(e) {

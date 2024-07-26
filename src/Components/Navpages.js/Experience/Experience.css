@@ -1,0 +1,99 @@
+.experience {
+  letter-spacing: 0.5px;
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience_data_container {
+  width: 75%;
+  margin: 0 auto;
+}
+.experience p {
+  line-height: 25px;
+  font-weight: 300px;
+  margin-bottom: 30px;
+  margin-bottom: 25px;
+  word-spacing: 2px;
+}
+
+.experience h2 {
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.ourExpertise h2 {
+  text-align: center;
+}
+
+.ourExpertise_data {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ourExpertise_data .cards {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 10px 10px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.card1 {
+  background-image: url("../../Assets/o1.jpg");
+}
+.card2 {
+  background-image: url("../../Assets/o2.jpg");
+}
+.card3 {
+  background-image: url("../../Assets/o7.jpg");
+}
+.card4 {
+  background-image: url("../../Assets/o8.jpg");
+}
+.card5 {
+  background-image: url("../../Assets/o6.jpg");
+}
+.card6 {
+  background-image: url("../../Assets/o5.jpg");
+}
+.card7 {
+  background-image: url("../../Assets/o9.jpg");
+}
+.card8 {
+  background-image: url("../../Assets/o10.jpg");
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
+.ourExpertise_data .cards h2 {
+  color: #ff3939;
+  text-align: center;
+  z-index: 100;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 280px) {
+  .experience_data_container {
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -4,13 +4,6 @@ import "./Header.css";
 import logo from "../Assets/tekAlgo_logo_in_white.png";
 import { VscThreeBars } from "react-icons/vsc";
 import { ImCross } from "react-icons/im";
-// import Aboutus from "../Navpages.js/Aboutus";
-// import Blog from "../Navpages.js/Blog";
-// import ContactUs from "../Navpages.js/ContactUs";
-// import Experience from "../Navpages.js/Experience";
-// import JoinTheTeam from "../Navpages.js/JoinTheTeam";
-// import WhatWeDo from "../Navpages.js/WhatWeDo";
-// import Footer from "../Footer/Footer";
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -27,7 +20,7 @@ const Header = () => {
     <div className="header_container">
       <div className="header">
         <div className="logo">
-          <img src={logo} alt="Logo" /> {/* Adjust the src as necessary */}
+          <img src={logo} alt="Logo" />
         </div>
 
         <div className="bars_container">
