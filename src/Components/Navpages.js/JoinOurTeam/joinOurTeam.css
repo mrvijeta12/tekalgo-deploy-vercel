@@ -1,4 +1,4 @@
-.video-background {
+/* .video-background {
   position: relative;
   top: 70px;
   width: 100%;
@@ -34,11 +34,11 @@
   background-color: transparent;
   letter-spacing: 10px;
   width: 100%;
-}
+} */
 
 .joinourteam_data_container {
   width: 75%;
-  margin: 150px auto 0px;
+  margin: 0px auto;
   font-size: 1rem;
 }
 
@@ -166,7 +166,10 @@
   flex: 1 1 400px;
   background: none;
   display: flex;
-  gap: 10px;
+  /* gap: 50px; */
+  /* border: 2px solid red; */
+  margin-bottom: 30px;
+  /* margin-right: 20px; */
 }
 
 .join_user_image {

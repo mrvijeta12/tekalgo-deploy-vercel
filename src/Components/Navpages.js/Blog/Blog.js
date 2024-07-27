@@ -1,11 +1,13 @@
 import React from "react";
 import "./Blog.css";
 import picture from "../../Assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import VideoComponent from "../../Video Component/VideoComponent";
 
 const Blog = () => {
   return (
     <div className="blog_container">
-      <div class="video-background">
+      {/* <VideoComponent /> */}
+      {/* <div class="video-background">
         <video autoPlay loop muted playsInline>
           <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -14,7 +16,7 @@ const Blog = () => {
           {" "}
           <h2>BLOG</h2>
         </div>
-      </div>
+      </div> */}
 
       <div className="blog_data">
         <div className="blog_cards blog_card1">

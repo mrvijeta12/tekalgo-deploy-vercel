@@ -5,22 +5,28 @@ import "./Navlinks.css";
 const Navlinks = ({ handleNavClick }) => {
   return (
     <div className="navlinks">
-      <NavLink to="/" onClick={() => handleNavClick("home")}>
+      <NavLink to="/" onClick={() => handleNavClick("ABOUT US")}>
         About Us
       </NavLink>
-      <NavLink to="/experience" onClick={() => handleNavClick("about")}>
+      <NavLink
+        to="/experience"
+        onClick={() => handleNavClick(" OUR EXPERIENCE")}
+      >
         experience
       </NavLink>
-      <NavLink to="/whatWeDo" onClick={() => handleNavClick("about")}>
+      <NavLink to="/whatWeDo" onClick={() => handleNavClick("WHAT WE DO")}>
         what We Do
       </NavLink>
-      <NavLink to="/blog" onClick={() => handleNavClick("blog")}>
+      <NavLink to="/blog" onClick={() => handleNavClick("BLOG")}>
         Blog
       </NavLink>
-      <NavLink to="/contactUs" onClick={() => handleNavClick("contact")}>
+      <NavLink to="/contactUs" onClick={() => handleNavClick("CONTACT US")}>
         Contact Us
       </NavLink>
-      <NavLink to="/joinOurTeam" onClick={() => handleNavClick("join")}>
+      <NavLink
+        to="/joinOurTeam"
+        onClick={() => handleNavClick("JOIN OUR TEAM")}
+      >
         Join Our Team
       </NavLink>
     </div>

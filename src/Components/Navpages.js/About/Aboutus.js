@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.css";
+import VideoComponent from "../../Video Component/VideoComponent";
 
 const Aboutus = () => {
   return (
     <div className="about">
-      <div class="video-background">
+      {/* <VideoComponent /> */}
+      {/* <div class="video-background">
         <video autoPlay loop muted playsInline>
           <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -13,7 +15,7 @@ const Aboutus = () => {
           {" "}
           <h2>ABOUT TEKALGO</h2>
         </div>
-      </div>
+      </div> */}
 
       <div className="welcome about_data">
         <h2>WELCOME TO TekAlgo</h2>

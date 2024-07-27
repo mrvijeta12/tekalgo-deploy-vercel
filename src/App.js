@@ -6,6 +6,17 @@ import AnimatedRoutes from "./Components/Animated Routes/AnimatedRoutes";
 import "./App.css";
 
 const App = () => {
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [currentNavLink, setCurrentNavLink] = useState("Home");
+
+  // const toggleSidebar = () => {
+  //   setSidebarOpen(!sidebarOpen);
+  // };
+
+  // const handleNavClick = (navLinkName) => {
+  //   setSidebarOpen(false);
+  //   setCurrentNavLink(navLinkName);
+  // };
   return (
     <div>
       <Layout>

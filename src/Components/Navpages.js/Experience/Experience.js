@@ -1,11 +1,13 @@
 import React from "react";
 import "../Experience/Experience";
 import "../About/About.css";
+import VideoComponent from "../../Video Component/VideoComponent";
 
 const Experience = () => {
   return (
     <div className="experience">
-      <div className="video-background">
+      {/* <VideoComponent /> */}
+      {/* <div className="video-background">
         <video autoPlay loop muted playsInline>
           <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -14,7 +16,7 @@ const Experience = () => {
           {" "}
           <h2>OUR EXPERIENCE</h2>
         </div>
-      </div>
+      </div> */}
 
       <div className="experience_data_container">
         <div className="ourExperience experience_data">

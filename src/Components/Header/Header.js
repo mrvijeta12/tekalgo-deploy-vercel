@@ -4,17 +4,29 @@ import "./Header.css";
 import logo from "../Assets/tekAlgo_logo_in_white.png";
 import { VscThreeBars } from "react-icons/vsc";
 import { ImCross } from "react-icons/im";
+import VideoComponent from "../Video Component/VideoComponent";
 
-const Header = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+const Header = ({
+  sidebarOpen,
+  currentNavLink,
+  toggleSidebar,
+  handleNavClick,
+}) => {
+  // const [sidebarOpen, setSidebarOpen] = useState(false);
+  // const [currentNavLink, setCurrentNavLink] = useState("Home");
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setSidebarOpen(!sidebarOpen);
+  // };
 
-  const handleNavClick = () => {
-    setSidebarOpen(false);
-  };
+  // const handleNavClick = (navLinkName) => {
+  //   setSidebarOpen(false);
+  //   setCurrentNavLink(navLinkName);
+  // };
+
+  // const handleNavLinkClick = (navLinkName) => {
+  //   setCurrentNavLink(navLinkName);
+  // };
 
   return (
     <div className="header_container">
@@ -31,6 +43,9 @@ const Header = () => {
         <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
           <Navlinks handleNavClick={handleNavClick} />
         </div>
+      </div>
+      <div className="videocomponent">
+        <VideoComponent currentNavLink={currentNavLink} />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../Experience/Experience.css";
 import "./ContactUs.css";
 import SocialLinks from "../../Social Links/SocialLinks";
+import VideoComponent from "../../Video Component/VideoComponent";
 
 const ContactUs = () => {
   const [input, setInput] = useState({
@@ -27,7 +28,8 @@ const ContactUs = () => {
 
   return (
     <div className="experience">
-      <div class="video-background">
+      {/* <VideoComponent /> */}
+      {/* <div class="video-background">
         <video autoPlay loop muted playsInline>
           <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -36,7 +38,7 @@ const ContactUs = () => {
           {" "}
           <h2>CONTACT US</h2>
         </div>
-      </div>
+      </div> */}
 
       <div className="experience_data_container">
         <div className="ourExperience experience_data ">

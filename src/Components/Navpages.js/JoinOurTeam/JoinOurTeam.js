@@ -1,11 +1,13 @@
 import React from "react";
 import "./joinOurTeam.css";
 import picture from "../../Assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import VideoComponent from "../../Video Component/VideoComponent";
 
 const JoinOurTeam = () => {
   return (
     <div className="joinourteam">
-      <div class="video-background">
+      {/* <VideoComponent /> */}
+      {/* <div class="video-background">
         <video autoPlay loop muted playsInline>
           <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -14,7 +16,7 @@ const JoinOurTeam = () => {
           {" "}
           <h2>JOIN OUR TEAM</h2>
         </div>
-      </div>
+      </div> */}
 
       <div className="joinourteam_data_container">
         <div className="joinourteam_data">
