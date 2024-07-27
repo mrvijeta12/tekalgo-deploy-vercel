@@ -27,7 +27,7 @@ const VideoBackground = ({ currentNavLink }) => {
     <div className="video-background" ref={ref}>
       {inView && (
         <video autoPlay loop muted>
-          <source src="https://your-cdn.com/salesforce.mp4" type="video/mp4" />
+          <source src="./salesforce.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}
