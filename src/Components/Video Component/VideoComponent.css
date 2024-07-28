@@ -23,3 +23,21 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   letter-spacing: 6px;
 }
+
+@media (max-width: 767px) {
+  .video-background video {
+    content: url("../../../public/s480.mp4");
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .video-background video {
+    content: url("../../../public/s720.mp4");
+  }
+}
+
+@media (min-width: 1025px) {
+  .video-background video {
+    content: url("../../../public/s1080.mp4");
+  }
+}

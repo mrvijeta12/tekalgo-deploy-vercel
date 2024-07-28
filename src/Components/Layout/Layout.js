@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 const Layout = ({ children }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [currentNavLink, setCurrentNavLink] = useState("ABOUT US");
+  const [currentNavLink, setCurrentNavLink] = useState("");
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
