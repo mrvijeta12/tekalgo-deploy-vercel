@@ -1,3 +1,5 @@
+//! working
+
 import React, { useState } from "react";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
@@ -6,53 +8,46 @@ import logo from "../Assets/tekAlgo_logo_in_white.png";
 const Footer = ({ handleNavClick }) => {
   const [email, setEmail] = useState("");
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setEmail("");
-  }
+  };
+
+  const handleClick = (linkName) => {
+    localStorage.setItem("currentNavLink", linkName);
+    handleNavClick(linkName);
+  };
+
   return (
     <div className="footer">
       <div className="logo footer-logo">
-        <img src={logo} alt="abc" />
+        <img src={logo} alt="Logo" onClick={() => handleClick("ABOUT US")} />
       </div>
       <div className="footer-content-container">
-        <div className="footer-menu footer-content ">
+        <div className="footer-menu footer-content">
           <h2>Useful Links</h2>
           <div className="footer-nav">
-            {/* <NavLink to="/">About Us</NavLink>
-            <NavLink to="/experience">experience</NavLink>
-            <NavLink to="/whatWeDo">what We Do</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/contactUs">Contact Us</NavLink>
-            <NavLink to="/joinOurTeam">Join The Team</NavLink> */}
-
-            <NavLink to="/" onClick={() => handleNavClick("ABOUT US")}>
+            <NavLink to="/" onClick={() => handleClick("ABOUT US")}>
               About Us
             </NavLink>
             <NavLink
               to="/experience"
-              onClick={() => handleNavClick(" OUR EXPERIENCE")}
+              onClick={() => handleClick("OUR EXPERIENCE")}
             >
-              experience
+              Experience
             </NavLink>
-            <NavLink
-              to="/whatWeDo"
-              onClick={() => handleNavClick("WHAT WE DO")}
-            >
-              what We Do
+            <NavLink to="/whatWeDo" onClick={() => handleClick("WHAT WE DO")}>
+              What We Do
             </NavLink>
-            <NavLink to="/blog" onClick={() => handleNavClick("BLOG")}>
+            <NavLink to="/blog" onClick={() => handleClick("BLOG")}>
               Blog
             </NavLink>
-            <NavLink
-              to="/contactUs"
-              onClick={() => handleNavClick("CONTACT US")}
-            >
+            <NavLink to="/contactUs" onClick={() => handleClick("CONTACT US")}>
               Contact Us
             </NavLink>
             <NavLink
               to="/joinOurTeam"
-              onClick={() => handleNavClick("JOIN OUR TEAM")}
+              onClick={() => handleClick("JOIN OUR TEAM")}
             >
               Join Our Team
             </NavLink>
@@ -61,24 +56,19 @@ const Footer = ({ handleNavClick }) => {
 
         <div className="footer-contact-us footer-content">
           <h2>Contact us</h2>
-
-          <p>Saket,New Delhi</p>
-
+          <p>Saket, New Delhi</p>
           <p>India</p>
-
           <p>
             <b>Phone:</b> +919118618111
           </p>
-
           <p>
-            <b>Email:</b>sales@tekalgo.com
+            <b>Email:</b> sales@tekalgo.com
           </p>
         </div>
 
         <div className="newsletter footer-content">
           <div className="subscription-content">
-            <h2>Our NewsLetter</h2>
-
+            <h2>Our Newsletter</h2>
             <p>
               Subscribe to our newsletter for weekly updates filled with
               excitement!

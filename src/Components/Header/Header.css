@@ -20,18 +20,33 @@
   width: 100%;
 } */
 
-.header .logo img {
-  width: 150px;
-  height: 40px;
-  margin: auto 0px;
-  background-color: #02024c;
-}
-
-.logo {
+.navlinkLogo {
+  /* border: 2px solid green; */
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.header .logo img {
+  width: 150px;
+  height: 40px;
+  /* margin: auto 0px; */
   background-color: #02024c;
+  /* line-height: 70px; */
+  /* border: 2px solid yellow; */
+  /* margin-top: 100px; */
+}
+
+.logo {
+  /* margin: auto 0px; */
+  height: 100%;
+  /* display: flex;
+  align-items: center; */
+  background-color: #02024c;
+  /* border: 2px solid red; */
+  /* justify-content: center; */
+  /* line-height: 70px; */
 }
 
 .bars {

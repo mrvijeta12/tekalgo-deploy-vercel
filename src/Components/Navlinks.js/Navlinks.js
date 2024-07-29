@@ -3,30 +3,29 @@ import { NavLink } from "react-router-dom";
 import "./Navlinks.css";
 
 const Navlinks = ({ handleNavClick }) => {
+  const handleClick = (linkName) => {
+    localStorage.setItem("currentNavLink", linkName);
+    handleNavClick(linkName);
+  };
+
   return (
     <div className="navlinks">
-      <NavLink to="/" onClick={() => handleNavClick("ABOUT US")}>
+      <NavLink to="/" onClick={() => handleClick("ABOUT US")}>
         About Us
       </NavLink>
-      <NavLink
-        to="/experience"
-        onClick={() => handleNavClick(" OUR EXPERIENCE")}
-      >
-        experience
+      <NavLink to="/experience" onClick={() => handleClick("OUR EXPERIENCE")}>
+        Experience
       </NavLink>
-      <NavLink to="/whatWeDo" onClick={() => handleNavClick("WHAT WE DO")}>
-        what We Do
+      <NavLink to="/whatWeDo" onClick={() => handleClick("WHAT WE DO")}>
+        What We Do
       </NavLink>
-      <NavLink to="/blog" onClick={() => handleNavClick("BLOG")}>
+      <NavLink to="/blog" onClick={() => handleClick("BLOG")}>
         Blog
       </NavLink>
-      <NavLink to="/contactUs" onClick={() => handleNavClick("CONTACT US")}>
+      <NavLink to="/contactUs" onClick={() => handleClick("CONTACT US")}>
         Contact Us
       </NavLink>
-      <NavLink
-        to="/joinOurTeam"
-        onClick={() => handleNavClick("JOIN OUR TEAM")}
-      >
+      <NavLink to="/joinOurTeam" onClick={() => handleClick("JOIN OUR TEAM")}>
         Join Our Team
       </NavLink>
     </div>
