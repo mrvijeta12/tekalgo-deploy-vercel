@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Experience/Experience.css";
 import "./ContactUs.css";
 import SocialLinks from "../../Social Links/SocialLinks";
 import VideoComponent from "../../Video Component/VideoComponent";
+import Aos from "aos";
 
 const ContactUs = () => {
   const [input, setInput] = useState({
@@ -26,20 +27,12 @@ const ContactUs = () => {
     });
   }
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  });
+
   return (
     <div className="experience">
-      {/* <VideoComponent /> */}
-      {/* <div class="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src="./salesforce.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="centered-text">
-          {" "}
-          <h2>CONTACT US</h2>
-        </div>
-      </div> */}
-
       <div className="experience_data_container">
         <div className="ourExperience experience_data ">
           {/* <h2>Contact Us</h2> */}
@@ -52,7 +45,7 @@ const ContactUs = () => {
 
         <h1 className="contact_header">Contact Us</h1>
         <div className="conatct_links_conatiner">
-          <div className="contact_address contact">
+          <div className="contact_address contact" data-aos="fade-right">
             <p>
               <b>Email:</b>sales@tekalgo.com
             </p>
@@ -70,13 +63,13 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <div className="contact_links contact">
+          <div className="contact_links contact" data-aos="fade-left">
             <h2>Social Links:</h2>
             <SocialLinks />
           </div>
         </div>
 
-        <div className="contact_form contact">
+        <div className="contact_form contact" data-aos="zoom-in">
           <form onSubmit={handleSubmit}>
             <div className="form">
               <label htmlFor="">Name:</label>

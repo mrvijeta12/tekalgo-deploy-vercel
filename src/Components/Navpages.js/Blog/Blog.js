@@ -1,23 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Blog.css";
 import picture from "../../Assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
-import VideoComponent from "../../Video Component/VideoComponent";
+import Aos from "aos";
 
 const Blog = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="blog_container">
-      {/* <VideoComponent /> */}
-      {/* <div class="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src="./salesforce.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="centered-text">
-          {" "}
-          <h2>BLOG</h2>
-        </div>
-      </div> */}
-
       <div className="blog_data">
         <div className="blog_cards blog_card1">
           <div className="user_image">
@@ -42,7 +33,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="blog_cards blog_card1">
+        <div className="blog_cards blog_card1" data-aos="fade-left">
           <div className="user_image">
             <img src={picture} alt="" />
           </div>
@@ -65,7 +56,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="blog_cards blog_card1">
+        <div className="blog_cards blog_card1" data-aos="fade-right">
           <div className="user_image">
             <img src={picture} alt="" />
           </div>

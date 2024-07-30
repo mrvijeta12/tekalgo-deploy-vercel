@@ -1,25 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Experience/Experience.css";
 import "./WhatWeDo.css";
-import VideoComponent from "../../Video Component/VideoComponent";
+import Aos from "aos";
 
 const Experience = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="experience">
-      {/* <h2>Our Experience</h2> */}
-      {/* <VideoComponent /> */}
-
-      {/* <div class="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src="./salesforce.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="centered-text">
-          {" "}
-          <h2>WHAT WE DO</h2>
-        </div>
-      </div> */}
-
       <div className="experience_data_container">
         <div className="ourExperience experience_data">
           <p>
@@ -34,7 +23,7 @@ const Experience = () => {
             Practice, and TekAlgo CPQ Practice.
           </p>
           <h2>TekAlgo Impact</h2>
-          <p>
+          <p data-aos="zoom-in">
             For businesses looking to achieve their desired project outcomes
             with a defined velocity and execution, our TekAlgo Impact team is
             the answer. We work with you from the very start to clearly define
@@ -44,7 +33,7 @@ const Experience = () => {
             predetermined timeframe and budget.
           </p>
           <h2>TekAlgo Momentum</h2>
-          <p>
+          <p data-aos="zoom-out">
             For businesses that require ongoing assistance and flexibility, our
             TekAlgo Momentum practice is the perfect solution. Our Momentum
             practice provides access to our entire pool of consulting resources
@@ -53,7 +42,7 @@ const Experience = () => {
             and project cadence that best suits your business needs.
           </p>
           <h2>TekAlgo Marketing Automation Practice</h2>
-          <p>
+          <p data-aos="zoom-in">
             TekAlgo’s Marketing Automation Practice provides services to help
             clients leverage the power of Salesforce Marketing Cloud and
             Salesforce Marketing Cloud Account Engagement, powered by Pardot for
@@ -61,7 +50,7 @@ const Experience = () => {
             value and helping clients achieve their business goals.
           </p>
           <h2>TekAlgo CPQ Practice</h2>
-          <p>
+          <p data-aos="zoom-out">
             TekAlgo’s dedicated Salesforce CPQ and Salesforce Industries CPQ
             practice supports organizations by maximizing the value driven
             through their quote-to-cash solutions. With subject matter experts
@@ -70,7 +59,7 @@ const Experience = () => {
             ourselves on tailoring the CPQ solution to meet today’s business
             requirements while designing for the scale of tomorrow.
           </p>
-          <p>
+          <p data-aos="zoom-out">
             We understand the complexities and challenges that businesses face
             when working with the Salesforce platform. That is why we have
             structured our services to help our clients succeed and overcome any
@@ -79,7 +68,7 @@ const Experience = () => {
             way.
           </p>
 
-          <p>
+          <p data-aos="zoom-out">
             Partner with us today and unlock the full potential of Salesforce
             for your business.
           </p>
@@ -89,19 +78,19 @@ const Experience = () => {
           <h2> Service Offering</h2>
 
           <div className="whatwedo_data">
-            <div className="cards card1">
+            <div className="cards card1" data-aos="fade-left">
               <h2>SALESFORCE SALES CLOUD</h2>
             </div>
-            <div className="cards card2">
+            <div className="cards card2" data-aos="fade-right">
               <h2>SALESFORCE SALES CLOUD</h2>
             </div>{" "}
-            <div className="cards card3">
+            <div className="cards card3" data-aos="fade-left">
               <h2>SALESFORCE SALES CLOUD</h2>
             </div>{" "}
-            <div className="cards card4">
+            <div className="cards card4" data-aos="fade-right">
               <h2>SALESFORCE SALES CLOUD</h2>
             </div>{" "}
-            <div className="cards card5">
+            <div className="cards card5" data-aos="fade-left">
               <h2>SALESFORCE SALES CLOUD</h2>
             </div>{" "}
             {/* <div className="cards card6">

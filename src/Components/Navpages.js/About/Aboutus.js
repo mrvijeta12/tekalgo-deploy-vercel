@@ -1,24 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import VideoComponent from "../../Video Component/VideoComponent";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Aboutus = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+    Aos.init();
+  }, []);
+
   return (
     <div className="about">
-      {/* <VideoComponent /> */}
-      {/* <div class="video-background">
-        <video autoPlay loop muted playsInline>
-          <source src="./salesforce.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="centered-text">
-          {" "}
-          <h2>ABOUT TEKALGO</h2>
-        </div>
-      </div> */}
-
       <div className="welcome about_data">
+        {/* <h2 data-aos="zoom-in">WELCOME TO TekAlgo</h2> */}
         <h2>WELCOME TO TekAlgo</h2>
+
         <p>
           At TekAlgo, we believe in building the digital foundations that
           support and elevate your business. Our expertise in cloud computing
@@ -29,7 +26,7 @@ const Aboutus = () => {
       </div>
       <div className="mission about_data">
         <h2>OUR MISSION</h2>
-        <p>
+        <p data-aos="zoom-in">
           Our mission is to provide seamless, robust, and scalable cloud
           solutions tailored to meet the unique needs of each client. We strive
           to deliver exceptional value through innovative services, expert
@@ -38,7 +35,7 @@ const Aboutus = () => {
       </div>
       <div className="whoweare about_data">
         <h2>WHO WE ARE</h2>
-        <p>
+        <p data-aos="zoom-out">
           TekAlgo is a team of dedicated professionals with a passion for
           technology and a deep understanding of the cloud ecosystem. Our
           diverse team of cloud architects, engineers, and consultants brings
@@ -46,7 +43,7 @@ const Aboutus = () => {
           most complex challenges.
         </p>
       </div>
-      <div className="ourvalues about_data">
+      <div className="ourvalues about_data" data-aos="fade-right">
         <h2>OUR VALUES</h2>
 
         <ul>
@@ -87,7 +84,7 @@ const Aboutus = () => {
 
       <div className="ourApproach about_data">
         <h2>OUR APPROACH</h2>
-        <p>
+        <p data-aos="zoom-in">
           At TekAlgo, we believe in a collaborative approach. We work closely
           with our clients to understand their goals, challenges, and unique
           requirements. This partnership ensures that our solutions are not only
@@ -96,8 +93,8 @@ const Aboutus = () => {
       </div>
 
       <div className="joinUs about_data">
-        <h2>JOIN US</h2>
-        <p>
+        <h2 data-aos="">JOIN US</h2>
+        <p data-aos="zoom-out">
           Discover how TekAlgo can transform your business. Whether you’re
           looking to migrate to the cloud, optimize your current setup, or need
           ongoing support, we are here to help you every step of the way.

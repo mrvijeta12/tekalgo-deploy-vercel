@@ -36,6 +36,7 @@
   color: black;
   font-weight: 600;
   text-decoration: underline;
+  /* border: 2px solid red; */
 }
 
 .about p {
@@ -43,6 +44,10 @@
   font-weight: 300px;
   margin-bottom: 6px;
 }
+/* p[data-aos="zoom-in"] {
+  opacity: 1; 
+  transition: opacity 0.6s, transform 0.6s;
+} */
 
 .about_data {
   margin-bottom: 20px;

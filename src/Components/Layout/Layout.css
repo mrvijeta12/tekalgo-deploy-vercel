@@ -8,9 +8,14 @@ html,
 .layout {
   display: flex;
   flex-direction: column;
-  max-width: 1344px;
+  /* max-width: 1344px; */
+  width: 100%;
   margin: 0px auto;
   position: relative;
+
+  /* added  */
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .content {
