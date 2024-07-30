@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./About.css";
-import VideoComponent from "../../Video Component/VideoComponent";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -84,7 +83,7 @@ const Aboutus = () => {
 
       <div className="ourApproach about_data">
         <h2>OUR APPROACH</h2>
-        <p data-aos="zoom-in">
+        <p data-aos="fade-left">
           At TekAlgo, we believe in a collaborative approach. We work closely
           with our clients to understand their goals, challenges, and unique
           requirements. This partnership ensures that our solutions are not only
@@ -94,7 +93,7 @@ const Aboutus = () => {
 
       <div className="joinUs about_data">
         <h2 data-aos="">JOIN US</h2>
-        <p data-aos="zoom-out">
+        <p data-aos="zoom-in">
           Discover how TekAlgo can transform your business. Whether you’re
           looking to migrate to the cloud, optimize your current setup, or need
           ongoing support, we are here to help you every step of the way.

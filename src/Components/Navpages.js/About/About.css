@@ -43,6 +43,7 @@
   line-height: 25px;
   font-weight: 300px;
   margin-bottom: 6px;
+  word-spacing: 2px;
 }
 /* p[data-aos="zoom-in"] {
   opacity: 1; 

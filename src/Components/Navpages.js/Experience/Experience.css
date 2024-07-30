@@ -13,7 +13,7 @@
 .experience p {
   line-height: 25px;
   font-weight: 300px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   margin-bottom: 25px;
   word-spacing: 2px;
 }
@@ -82,13 +82,16 @@
 }
 
 .ourExpertise_data .cards h2 {
-  color: #ff3939;
+  color: white;
   text-align: center;
   z-index: 100;
   margin-bottom: 5px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 200;
+
+  text-shadow: 0 0 5px rgba(10, 10, 10, 0.5), 0 0 10px rgba(14, 14, 14, 0.5),
+    0 0 15px rgba(10, 10, 10, 0.5), 0 0 20px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(1, 1, 1, 0.5), 0 0 30px rgba(45, 44, 45, 0.5);
 }
 
 @media screen and (max-width: 280px) {
