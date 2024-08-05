@@ -58,7 +58,7 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="ourExpertise experience_data">
+        <div className="ourExpertise experience_data" data-aos="zoom-in">
           <h2> Our Expertise</h2>
 
           <div className="ourExpertise_data">

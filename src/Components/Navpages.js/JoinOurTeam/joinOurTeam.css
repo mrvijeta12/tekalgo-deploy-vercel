@@ -236,12 +236,22 @@
   }
 }
 
-@media screen and (max-width: 280px) {
+/* @media screen and (max-width: 280px) {
   .joinourteam_data_container {
     width: 100%;
     padding: 10px;
   }
 
+  .joinourteam_data {
+    width: 100%;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .about_data {
+    width: 100% !important;
+    padding: 20px;
+  }
   .joinourteam_data {
     width: 100%;
   }

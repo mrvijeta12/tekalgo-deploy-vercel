@@ -39,9 +39,16 @@
   }
 }
 
-@media screen and (max-width: 280px) {
+/* @media screen and (max-width: 280px) {
   .blog_data {
     width: 100% !important;
     padding: 10px;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .about_data {
+    width: 100% !important;
+    padding: 20px;
   }
 }
