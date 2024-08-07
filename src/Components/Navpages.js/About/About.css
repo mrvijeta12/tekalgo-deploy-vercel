@@ -58,6 +58,7 @@
   width: 100%;
   list-style-position: inside;
   padding-left: 0px;
+  /* border: 2px solid red; */
 }
 
 .about_data ul li {
@@ -65,8 +66,12 @@
   text-indent: -1.5em;
   padding-left: 1.5em;
   margin-bottom: 10px;
+  /* border: 2px solid yellow; */
 }
 
+.about_data ul span {
+  /* border: 2px solid black; */
+}
 .about_data ul li::marker {
   color: #02024c;
   font-size: 24px;
@@ -74,7 +79,8 @@
 
 .about strong {
   margin-right: 10px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  /* border: 2px solid green; */
 }
 
 @media screen and (max-width: 472px) {

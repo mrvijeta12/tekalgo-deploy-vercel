@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import "./joinOurTeam.css";
 import picture from "../../Assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import j1 from "../../Assets/j1.jpg";
+import j2 from "../../Assets/j2.jpg";
+import j3 from "../../Assets/j3.jpg";
+import j4 from "../../Assets/j4.jpg";
+
 import Aos from "aos";
 
 const JoinOurTeam = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, once: true });
   }, []);
   return (
     <div className="joinourteam">
@@ -121,7 +126,7 @@ const JoinOurTeam = () => {
             <div className="join_user_cards card1" data-aos="zoom-in">
               <div className="join_user_image_conatiner">
                 <div className="join_user_image">
-                  <img src={picture} alt="" />
+                  <img src={j1} alt="" />
                 </div>
                 <div className="join_user_name">
                   <p>
@@ -148,7 +153,7 @@ const JoinOurTeam = () => {
             <div className="join_user_cards card1" data-aos="zoom-in">
               <div className="join_user_image_conatiner">
                 <div className="join_user_image">
-                  <img src={picture} alt="" />
+                  <img src={j2} alt="" />
                 </div>
                 <div className="join_user_name">
                   <p>
@@ -178,7 +183,7 @@ const JoinOurTeam = () => {
             <div className="join_user_cards card1" data-aos="zoom-in">
               <div className="join_user_image_conatiner">
                 <div className="join_user_image">
-                  <img src={picture} alt="" />
+                  <img src={j3} alt="" />
                 </div>
                 <div className="join_user_name">
                   <p>
@@ -205,7 +210,7 @@ const JoinOurTeam = () => {
             <div className="join_user_cards card1" data-aos="zoom-in">
               <div className="join_user_image_conatiner">
                 <div className="join_user_image">
-                  <img src={picture} alt="" />
+                  <img src={j4} alt="" />
                 </div>
                 <div className="join_user_name">
                   <p>
