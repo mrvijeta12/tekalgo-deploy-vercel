@@ -14,7 +14,9 @@ const Footer = ({ handleNavClick }) => {
   };
 
   const handleClick = (linkName) => {
-    localStorage.setItem("currentNavLink", linkName);
+    // localStorage.setItem("currentNavLink", linkName);
+    sessionStorage.setItem("currentNavLink", linkName);
+
     handleNavClick(linkName);
   };
 
